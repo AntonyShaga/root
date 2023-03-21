@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 10px 0px;
+  background-color: #fff;
+}
+.container {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 1406px;
+  margin: 0 auto;
+}
+.mandrake {
+  display: none;
+}
+.canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 350px;
+}
+
+.animation {
+  font-family: 'Bangers', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  font-size: 20px;
+}
+.animation__list {
+  list-style: none;
+}
+.animation__text {
+  font-size: 40px;
+}
+
+.animation__item {
+  display: inline-block;
+  padding-right: 20px;
+}
+.animation__item:last-child {
+  padding-right: 0;
+}
+
+.animation__fild {
+  display: flex;
+  height: calc(100vh - 72px);
+  max-width: 100%;
+  background-image: url('img/105_mushroom_background.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
