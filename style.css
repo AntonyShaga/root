@@ -6,7 +6,7 @@ body {
 .container {
   box-sizing: border-box;
   border: 1px solid black;
-  width: 1406px;
+  max-width: 1406px;
   margin: 0 auto;
 }
 .mandrake {
@@ -30,9 +30,11 @@ body {
   font-size: 20px;
 }
 .animation__list {
+  margin: 0;
   list-style: none;
 }
 .animation__text {
+  margin: 0;
   font-size: 40px;
 }
 
@@ -52,4 +54,23 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
+}
+@media (max-width: 1023px) {
+  .animation {
+    display: flex;
+    flex-direction: column;
+  }
+  .animation__text {
+    font-size: 30px;
+  }
+  .animation__fild {
+    height: calc(100vh - 82px);
+  }
+  body {
+    padding: 0;
+  }
+  .animation {
+    height: 80px;
+    font-size: 20px;
+  }
 }
